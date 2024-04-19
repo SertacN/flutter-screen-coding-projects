@@ -5,6 +5,7 @@ import 'package:travel_mobile_app/feature/travel_mobile_enum.dart';
 import 'package:travel_mobile_app/feature/travel_mobile_icon_manager.dart';
 import 'package:travel_mobile_app/feature/travel_mobile_keys.dart';
 
+part 'widgets/travel_appbar.dart';
 part 'widgets/travel_mobile_notification.dart';
 part 'widgets/travel_search_title.dart';
 part 'widgets/travel_searchbar_with_icon.dart';
@@ -22,13 +23,7 @@ class _TravelMobilViewState extends State<TravelMobileView>
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: context.colorScheme.onBackground,
-      appBar: AppBar(
-        backgroundColor: context.colorScheme.onBackground,
-        title: const Text(TravelMobileKeys.welcomeTitle),
-        titleTextStyle: context.textTheme.headlineMedium
-            ?.copyWith(fontWeight: FontWeight.bold),
-        actions: const [_TravelMobileNotification()],
-      ),
+      appBar: const TravelAppBar(),
       body: Padding(
         padding: TravelMobilePadding.hight.paddingHorizontal,
         child: Column(
