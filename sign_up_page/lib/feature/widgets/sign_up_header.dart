@@ -1,7 +1,7 @@
 part of '../sign_up_view.dart';
 
 class _SignUpHeader extends StatelessWidget {
-  const _SignUpHeader({super.key});
+  const _SignUpHeader();
 
   @override
   Widget build(BuildContext context) {
@@ -9,7 +9,7 @@ class _SignUpHeader extends StatelessWidget {
       padding: SignUpPadding.hight.verticalPadding,
       child: Text(
         SignUpKeys.headerTitle,
-        style: Theme.of(context).textTheme.displaySmall,
+        style: context.textTheme.displaySmall,
       ),
     );
   }
