@@ -31,6 +31,24 @@ class _TravelMobilViewState extends State<TravelMobileView>
           children: [
             const _TravelSearchTitle(title: TravelMobileKeys.searchTitle),
             _TravelSearchBarWithIcon(controller: searchBarController),
+            const DefaultTabController(
+                length: 4,
+                child: TabBar(
+                    labelPadding: EdgeInsets.symmetric(horizontal: 1),
+                    tabs: [
+                      Tab(
+                        child: Text('Recommende'),
+                      ),
+                      Tab(
+                        child: Text('Popular'),
+                      ),
+                      Tab(
+                        child: Text('Holiday'),
+                      ),
+                      Tab(
+                        child: Text('New'),
+                      )
+                    ]))
           ],
         ),
       ),
