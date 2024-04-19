@@ -87,7 +87,8 @@ class _SigUpViewState extends State<SigUpView> with SignUpControllerMixin {
   IconButton _backButton() {
     return IconButton(
         style: ButtonStyle(
-            backgroundColor: MaterialStatePropertyAll(Colors.grey[850])),
+            backgroundColor:
+                MaterialStatePropertyAll(context.colorScheme.onSecondary)),
         onPressed: () {},
         icon: const Icon(Icons.arrow_back_ios_outlined));
   }

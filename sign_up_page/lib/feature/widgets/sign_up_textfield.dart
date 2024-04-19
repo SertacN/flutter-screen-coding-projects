@@ -32,15 +32,17 @@ class SignUpTextField extends StatelessWidget {
         children: [
           Text(_title,
               style: context.textTheme.titleMedium
-                  ?.copyWith(color: SignUpColors.grey())),
+                  ?.copyWith(color: context.colorScheme.onBackground)),
           TextField(
             textInputAction: TextInputAction.next,
             controller: _controller,
             keyboardType: _keyboardType,
             obscureText: _visiblePassword,
             decoration: InputDecoration(
-              prefixIcon: Icon(_prefixIcon, color: SignUpColors.grey()),
-              suffixIcon: Icon(_suffixIcon, color: SignUpColors.grey()),
+              prefixIcon:
+                  Icon(_prefixIcon, color: context.colorScheme.onBackground),
+              suffixIcon:
+                  Icon(_suffixIcon, color: context.colorScheme.onBackground),
             ),
           ),
         ],

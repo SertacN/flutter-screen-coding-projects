@@ -13,7 +13,7 @@ class _SignUpHaveAccount extends StatelessWidget {
           TextSpan(
               text: SignUpKeys.signIn,
               style: context.textTheme.titleMedium
-                  ?.copyWith(color: SignUpColors.blue()))
+                  ?.copyWith(color: context.colorScheme.secondary))
         ])),
       ),
     );
