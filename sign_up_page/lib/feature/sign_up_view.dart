@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:sign_up_page/core/extension/context_extension.dart';
-import 'package:sign_up_page/feature/sign_up_colors.dart';
 import 'package:sign_up_page/feature/sign_up_controller_mixin.dart';
 import 'package:sign_up_page/feature/sign_up_icons_manager.dart';
 import 'package:sign_up_page/feature/sign_up_keys.dart';
@@ -86,9 +85,7 @@ class _SigUpViewState extends State<SigUpView> with SignUpControllerMixin {
 
   IconButton _backButton() {
     return IconButton(
-        style: ButtonStyle(
-            backgroundColor:
-                MaterialStatePropertyAll(context.colorScheme.onSecondary)),
+        style: ButtonStyle(backgroundColor: MaterialStatePropertyAll(context.colorScheme.onSecondary)),
         onPressed: () {},
         icon: const Icon(Icons.arrow_back_ios_outlined));
   }

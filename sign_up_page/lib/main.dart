@@ -10,8 +10,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        theme: CustomDarkTheme().themeData,
-        title: 'Sign Up Page',
-        home: const SigUpView());
+      theme: CustomDarkTheme().themeData,
+      title: 'Sign Up Page',
+      home: const SigUpView(),
+    );
   }
 }
