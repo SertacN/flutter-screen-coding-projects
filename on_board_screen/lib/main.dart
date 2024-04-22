@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: 'Material App',
+      title: 'On Board Screen',
       home: Placeholder(),
     );
   }
