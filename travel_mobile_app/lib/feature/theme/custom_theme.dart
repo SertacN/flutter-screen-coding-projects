@@ -8,5 +8,6 @@ class CustomLightTheme {
     primary: TravelColor.lightRed(),
     onBackground: TravelColor.lightPink(),
     onSecondary: TravelColor.grey(),
+    primaryContainer: TravelColor.pink(),
   ));
 }

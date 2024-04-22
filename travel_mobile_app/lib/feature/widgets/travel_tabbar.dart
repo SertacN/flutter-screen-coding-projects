@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:travel_mobile_app/feature/travel_mobile_keys.dart';
+import 'package:travel_mobile_app/feature/constant/travel_mobile_keys.dart';
 
 class TravelTabbar extends StatefulWidget {
   const TravelTabbar({super.key});
@@ -8,7 +8,8 @@ class TravelTabbar extends StatefulWidget {
   State<TravelTabbar> createState() => _TravelTabbarState();
 }
 
-class _TravelTabbarState extends State<TravelTabbar> with TickerProviderStateMixin {
+class _TravelTabbarState extends State<TravelTabbar>
+    with TickerProviderStateMixin {
   late final TabController _tabController;
   final int _tabLenght = 4;
 
@@ -31,13 +32,16 @@ class _TravelTabbarState extends State<TravelTabbar> with TickerProviderStateMix
         child: Row(
           children: [
             Expanded(
-              child:
-                  TabBar(controller: _tabController, isScrollable: true, tabAlignment: TabAlignment.start, tabs: const [
-                Tab(child: Text(TravelMobileKeys.tabbarRecommended)),
-                Tab(child: Text(TravelMobileKeys.tabbarPopuler)),
-                Tab(child: Text(TravelMobileKeys.tabbarHoliday)),
-                Tab(child: Text(TravelMobileKeys.tabbarNew)),
-              ]),
+              child: TabBar(
+                  controller: _tabController,
+                  isScrollable: true,
+                  tabAlignment: TabAlignment.start,
+                  tabs: const [
+                    Tab(child: Text(TravelMobileKeys.tabbarRecommended)),
+                    Tab(child: Text(TravelMobileKeys.tabbarPopuler)),
+                    Tab(child: Text(TravelMobileKeys.tabbarHoliday)),
+                    Tab(child: Text(TravelMobileKeys.tabbarNew)),
+                  ]),
             )
           ],
         ));

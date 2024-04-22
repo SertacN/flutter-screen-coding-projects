@@ -5,18 +5,11 @@ class _TravelMobileNotification extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(children: [
-      Positioned(
-          top: PositionKeys.top.topPosition,
-          right: PositionKeys.right.rightPosition,
-          child: Container(
-            padding: TravelMobilePadding.low.paddingAll,
-            decoration: BoxDecoration(
-                color: context.colorScheme.error, shape: BoxShape.circle),
-          )),
-      IconButton(
-          onPressed: () {},
-          icon: TravelMobileIconManager.instance.notificationIcon),
-    ]);
+    return IconButton(
+        onPressed: () {},
+        icon: Badge(
+          alignment: Alignment.topLeft,
+          child: TravelMobileIconManager.instance.notificationIcon,
+        ));
   }
 }
