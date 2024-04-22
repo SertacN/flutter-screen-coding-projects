@@ -14,9 +14,8 @@ class _SignUpButton extends StatelessWidget {
       padding: SignUpPadding.low.verticalPadding,
       child: ElevatedButton(
           style: ElevatedButton.styleFrom(
-              shape:
-                  RoundedRectangleBorder(borderRadius: _buttonBorderRadius()),
-              backgroundColor: SignUpColors.deepPurple()),
+              shape: RoundedRectangleBorder(borderRadius: _buttonBorderRadius()),
+              backgroundColor: context.colorScheme.primary),
           onPressed: onPressed,
           child: Padding(
             padding: SignUpPadding.medium.verticalPadding,
@@ -29,6 +28,5 @@ class _SignUpButton extends StatelessWidget {
     );
   }
 
-  BorderRadius _buttonBorderRadius() =>
-      const BorderRadius.all(Radius.circular(16));
+  BorderRadius _buttonBorderRadius() => const BorderRadius.all(Radius.circular(16));
 }

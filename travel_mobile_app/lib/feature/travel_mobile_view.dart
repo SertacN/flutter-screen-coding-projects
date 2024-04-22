@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:travel_mobile_app/core/extension/context_extension.dart';
 import 'package:travel_mobile_app/feature/travel_mobile_controller_mixin.dart';
 import 'package:travel_mobile_app/feature/travel_mobile_enum.dart';
 import 'package:travel_mobile_app/feature/travel_mobile_icon_manager.dart';
 import 'package:travel_mobile_app/feature/travel_mobile_keys.dart';
+import 'package:travel_mobile_app/feature/widgets/travel_tabbar.dart';
 
 part 'widgets/travel_appbar.dart';
 part 'widgets/travel_mobile_notification.dart';
@@ -48,7 +50,55 @@ class _TravelMobilViewState extends State<TravelMobileView>
                       Tab(
                         child: Text('New'),
                       )
-                    ]))
+                    ])),
+            const TravelTabbar(),
+            Padding(
+              padding: TravelMobilePadding.hight.paddingVertical,
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Stack(children: [
+                      SizedBox(
+                        width: MediaQuery.of(context).size.width * 0.5,
+                        height: MediaQuery.of(context).size.height * 0.16,
+                        child: Card(
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(16),
+                            child: Image.asset(
+                              'assets/jpg/travel_japan.jpg',
+                              fit: BoxFit.fill,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                          top: MediaQuery.of(context).size.height * 0.13,
+                          left: MediaQuery.of(context).size.width * 0.2,
+                          child: Text(
+                            'data',
+                            style: context.textTheme.titleMedium?.copyWith(
+                                color: context.colorScheme.background),
+                          ))
+                    ]),
+                  ),
+                  Expanded(
+                    child: SizedBox(
+                      width: MediaQuery.of(context).size.width * 0.1,
+                      height: MediaQuery.of(context).size.height * 0.16,
+                      child: Card(
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(16),
+                          child: Image.asset(
+                            'assets/jpg/travel_america.jpg',
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
