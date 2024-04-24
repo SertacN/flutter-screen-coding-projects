@@ -21,6 +21,7 @@ final class OnBoardKeys {
   static const String happinessContent =
       'Users will be able to go live, chat and meet with people near by.';
 
-  static const String skipButton = "SKIP";
-  static const String nextButton = "NEXT";
+  static const String skipButton = 'SKIP';
+  static const String nextButton = 'NEXT';
+  static const String getStarted = 'GET STARTED';
 }

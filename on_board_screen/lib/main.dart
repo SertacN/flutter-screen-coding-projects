@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:on_board_screen/feature/on_board_view.dart';
+import 'package:on_board_screen/feature/view/on_board_view.dart';
 
 void main() => runApp(const MyApp());
 

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:on_board_screen/feature/constants/on_board_keys.dart';
-import 'package:on_board_screen/feature/constants/on_board_position.dart';
 
 class OnBoardSkipButton extends StatefulWidget {
   const OnBoardSkipButton(
@@ -16,9 +15,8 @@ class OnBoardSkipButton extends StatefulWidget {
 class _OnBoardButtonState extends State<OnBoardSkipButton> {
   @override
   Widget build(BuildContext context) {
-    return Positioned(
-      bottom: OnBoardPosition.verticalPosition,
-      left: OnBoardPosition.horizontalPosition,
+    return Padding(
+      padding: EdgeInsets.only(right: MediaQuery.of(context).size.width * 0.55),
       child: TextButton(
           onPressed: () {
             if (widget.currentPageIndex == 0) {
