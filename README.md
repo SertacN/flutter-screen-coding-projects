@@ -17,8 +17,11 @@ https://www.uplabs.com/posts/travel-mobile-app-97894a6d-bfce-42a4-ac10-462c79e25
 https://github.com/SertacN/flutter-screen-coding-projects/tree/main/travel_mobile_app </br>
 
 ### On Board Screen
+
 <img src="https://github.com/SertacN/flutter-screen-coding-projects/blob/main/screenshots/on_board_screen.png" width="50%" height="50%" />
 <p>Design:</p>
 https://www.uplabs.com/posts/onboarding-screen-freebie-548c4669-8ef7-43a9-857c-e12d92772c1b
 <p>Coding:</p>
 https://github.com/SertacN/flutter-screen-coding-projects/tree/main/on_board_screen </br>
+
+### Gamification
