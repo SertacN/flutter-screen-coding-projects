@@ -25,3 +25,9 @@ https://www.uplabs.com/posts/onboarding-screen-freebie-548c4669-8ef7-43a9-857c-e
 https://github.com/SertacN/flutter-screen-coding-projects/tree/main/on_board_screen </br>
 
 ### Gamification
+
+<img src="https://github.com/SertacN/flutter-screen-coding-projects/blob/main/screenshots/gamification.png" width="50%" height="50%"/>
+<p>Design:</p>
+https://www.uplabs.com/posts/gamification-1ad6a22e-29a3-4863-b142-ea8080bfe17c
+<p>Coding:</p>
+https://github.com/SertacN/flutter-screen-coding-projects/tree/main/gamification </br>
